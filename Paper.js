@@ -9,7 +9,7 @@ class Paper{
         }
                 this.radius = radius;
 
-        this.body = Bodies.circle(x, y, radius/2);
+        this.body = Bodies.circle(x, y, radius/2,options);
         
         
         World.add(world, this.body);
