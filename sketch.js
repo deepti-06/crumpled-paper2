@@ -20,7 +20,7 @@ function setup() {
 var rod1 = createSprite(500,660,10,170)
 var rod2 = createSprite(680,660,10,170)
 var rod3 = createSprite(590,700,170,20)
-	Paper1 = new Paper(100, 600, 10);
+	Paper1 = new Paper(100, 600, 40);
 	ground = new Ground(600,height,1200,20)
   
 }
@@ -47,7 +47,7 @@ function draw() {
 function keyPressed(){
 	if(keyCode === UP_ARROW) {
 	
-		Matter.Body.applyForce(Paper1.body, Paper1.body.position, {x:300, y:-300});
+		Matter.Body.applyForce(Paper1.body, Paper1.body.position, {x:80, y:-80});
 		console.log("hi")
 	}
 }	
