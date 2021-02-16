@@ -1,14 +1,15 @@
 class Paper{
     constructor(x, y, radius ) {
         var options = {
-           // 'isStatic' : false,
+           'isStatic' : false,
             'restitution':0.8,
             'friction':0.5,
             'density':1
 
         }
-        this.body = Bodies.circle(x, y, radius);
-        this.radius = radius;
+         this.radius = radius;
+
+        this.body = Bodies.circle(x, y, radius/2);
         
         
         World.add(world, this.body);
@@ -20,7 +21,7 @@ class Paper{
      push();
      translate( pos.x, pos.y)
      ellipseMode(RADIUS)
-      ellipse(0, 0, this.width, this.height);
+      ellipse(0, 0, this.radius, this.radius);
         
         pop();
       }
