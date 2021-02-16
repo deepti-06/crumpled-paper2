@@ -10,7 +10,7 @@ function preload()
 }
 
 function setup() {
-	createCanvas(800, 700);
+	createCanvas(1600, 700);
 	
 
 	engine = Engine.create();
@@ -20,8 +20,10 @@ function setup() {
 var rod1 = createSprite(500,660,10,170)
 var rod2 = createSprite(680,660,10,170)
 var rod3 = createSprite(590,700,170,20)
-	Paper1 = new Paper(100, 600, 40);
+	Paper1 = new Paper(100, 600, 30);
 	ground = new Ground(600,height,1200,20)
+
+	
   
 }
 

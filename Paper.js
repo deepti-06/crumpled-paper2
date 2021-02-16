@@ -9,7 +9,7 @@ class Paper{
         }
                 this.radius = radius;
 
-        this.body = Bodies.circle(x, y, radius/2,options);
+        this.body = Bodies.circle(x, y, radius,options);
         
         
         World.add(world, this.body);
@@ -21,7 +21,7 @@ class Paper{
      push();
      translate( pos.x, pos.y)
      ellipseMode(RADIUS)
-      ellipse(0, 0, this.radius, this.radius);
+      ellipse(0, 0, this.radius,this.radius);
         
         pop();
       }
